@@ -6,6 +6,7 @@ Requirements
 
 * rbenv for ruby: https://github.com/rbenv/rbenv
 * goenv for go: http://github.com/syndbg/goenv
+* nvm for node: https://github.com/creationix/nvm
 
 Install
 -------
