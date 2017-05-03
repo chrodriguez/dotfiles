@@ -9,6 +9,7 @@ alias lh='ls -Alh'
 alias e="$EDITOR"
 alias v="$VISUAL"
 alias mysql55="mysql --defaults-group-suffix=55"
+alias be="bundle exec"
 
 # Bundler
 alias b="bundle"
