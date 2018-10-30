@@ -76,9 +76,6 @@ if executable('ag')
 endif
 
 " Color scheme
-colorscheme github
-highlight NonText guibg=#060606
-highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
 " Numbers
 set number
@@ -135,8 +132,15 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-" configure syntastic syntax checking to check on open as well as save
-let g:syntastic_check_on_open=1
+" configure syntastic syntax checking
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+"let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
@@ -149,5 +153,4 @@ autocmd FileType latex setlocal spell
 set t_Co=256
 set spelllang=es
 " colorscheme railscasts
-" colorscheme whitebox
-
+colorscheme railscasts
