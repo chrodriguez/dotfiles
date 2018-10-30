@@ -168,4 +168,6 @@ composer () {
         composer "$@"
 }
 
-
+if [ -f $HOME/.bash_completion ]; then
+    . $HOME/.bash_completion
+fi
