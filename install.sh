@@ -14,6 +14,6 @@ for name in *; do
   fi
 done
 
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-git clone https://github.com/jimeh/git-aware-prompt.git ~/.bash/git-aware-prompt
+rm -fr ~/.vim/bundle/vundle && git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+rm -fr ~/.bash/git-aware-prompt && git clone https://github.com/jimeh/git-aware-prompt.git ~/.bash/git-aware-prompt
 vim -u ~/.vimrc.bundles +BundleInstall +qa

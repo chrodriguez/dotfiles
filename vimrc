@@ -148,6 +148,6 @@ autocmd BufRead,BufNewFile *.tex set filetype=latex
 autocmd FileType latex setlocal spell
 set t_Co=256
 set spelllang=es
-colorscheme railscasts
-colorscheme whitebox
+" colorscheme railscasts
+" colorscheme whitebox
 
