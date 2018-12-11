@@ -133,9 +133,13 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
 " configure syntastic syntax checking
+set statusline=%<%f\ %h%m%r%=%-20.(line=%l,col=%c%V,totlin=%L%)\%h%m%r%=%-40(,bytval=0x%B,%n%Y%)\%P
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+highlight ColorColumn ctermbg=gray
+set colorcolumn=80
 
 "let g:syntastic_always_populate_loc_list = 1
 " let g:syntastic_auto_loc_list = 1

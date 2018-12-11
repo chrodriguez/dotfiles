@@ -8,7 +8,7 @@ alias ll='ls -al'
 alias lh='ls -Alh'
 alias e="$EDITOR"
 alias v="$VISUAL"
-alias mysql55="mysql --defaults-group-suffix=55"
+alias mysql56="mysql --defaults-group-suffix=56"
 alias be="bundle exec"
 alias http-server="python -mSimpleHTTPServer"
 alias rancher="rancher-0.6.3"

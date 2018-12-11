@@ -164,6 +164,7 @@ composer () {
         --user $(id -u):$(id -g) \
         --volume /etc/passwd:/etc/passwd:ro \
         --volume /etc/group:/etc/group:ro \
+        --volume $(HOME):$HOME \
         --volume $(pwd):/app \
         composer "$@"
 }

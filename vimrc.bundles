@@ -7,9 +7,12 @@ call vundle#rc()
 " Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 Bundle 'flazz/vim-colorschemes'
-Bundle 'acarapetis/vim-colors-github'
+" Bundle 'acarapetis/vim-colors-github'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-syntastic/syntastic'
+"Bundle 'rafi/awesome-vim-colorschemes'
+Bundle 'guns/xterm-color-table.vim'
+Bundle 'sirtaj/vim-openscad'
 
 " Define bundles via Github repos
 " Bundle 'croaky/vim-colors-github'

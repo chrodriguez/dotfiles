@@ -28,3 +28,5 @@
 	default = current
 [user]
 	email = chrodriguez@gmail.com
+[credential]
+	helper = cache
