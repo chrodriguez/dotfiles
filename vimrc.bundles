@@ -13,6 +13,8 @@ Bundle 'vim-syntastic/syntastic'
 "Bundle 'rafi/awesome-vim-colorschemes'
 Bundle 'guns/xterm-color-table.vim'
 Bundle 'sirtaj/vim-openscad'
+Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
 
 " Define bundles via Github repos
 " Bundle 'croaky/vim-colors-github'
