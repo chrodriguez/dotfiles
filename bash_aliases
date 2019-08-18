@@ -11,9 +11,7 @@ alias v="$VISUAL"
 alias mysql56="mysql --defaults-group-suffix=56"
 alias be="bundle exec"
 alias http-server="python -mSimpleHTTPServer"
-alias rancher="rancher-0.6.3"
-alias rancher-compose="rancher-compose-0.12.5"
-alias bluechip-backend-init=$HOME/.bluechip-backend-init/install
+alias rancher="rancher-0.6.12"
 
 # Bundler
 alias b="bundle"
