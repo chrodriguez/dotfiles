@@ -13,6 +13,7 @@ alias be="bundle exec"
 alias http-server="python -mSimpleHTTPServer"
 alias rancher="rancher-0.6.3"
 alias rancher-compose="rancher-compose-0.12.5"
+alias bluechip-backend-init=$HOME/.bluechip-backend-init/install
 
 # Bundler
 alias b="bundle"
