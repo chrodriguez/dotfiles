@@ -7,9 +7,16 @@ for name in *; do
       echo "WARNING: $target exists but is not a symlink."
     fi
   else
-    if [ "$name" != 'install.sh' ] && [ "$name" != 'README.md' ]; then
+    if [ "$name" != 'install.sh' ] && [ "$name" != 'README.md' ] && [ "$name" != 'direnvrc' ]; then
       echo "Creating $target"
       ln -s "$PWD/$name" "$target"
+    else
+      if [ "$name" = 'direnvrc' ]; then
+        target=$HOME/.config/direnv
+        echo "Creating $target"
+        mkdir -p $target
+        ln -s "$PWD/$name" "$target"
+      fi
     fi
   fi
 done

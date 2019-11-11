@@ -138,7 +138,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Apache Maven Environment Variables
 # MAVEN_HOME for Maven 1 - M2_HOME for Maven 2
-export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 export M2_HOME=$HOME/apps/apache-maven
 export MAVEN_HOME=$M2_HOME
 export PATH=${M2_HOME}/bin:${PATH}
