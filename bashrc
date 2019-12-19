@@ -163,7 +163,7 @@ if [ -f $HOME/.bash_completion ]; then
     . $HOME/.bash_completion
 fi
 
-#source <(kubectl completion bash)
+source <(kubectl completion bash)
 
 python3 -m site &> /dev/null && export PATH=$PATH:$(python3 -m site --user-base)/bin
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
