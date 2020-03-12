@@ -4,8 +4,8 @@ _ssh()
     COMPREPLY=()
     cur="${COMP_WORDS[COMP_CWORD]}"
     prev="${COMP_WORDS[COMP_CWORD-1]}"
-    opts=$(grep -i '^Host' ~/.ssh/config ~/.ssh-shared/*/* 2>/dev/null | grep -v '[?*]' | cut -d ' ' -f 2-)
-
+    files=$(grep '^Include' ~/.ssh/config | sed -r 's/^Include //' | tr '\n' ' ')
+    opts=$(eval "grep -i '^Host' ~/.ssh/config $files 2>/dev/null"| grep -v '[?*]' | cut -d ' ' -f 2-)
     COMPREPLY=( $(compgen -W "$opts" -- ${cur}) )
     return 0
 }
