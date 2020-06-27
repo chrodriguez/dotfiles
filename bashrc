@@ -164,6 +164,8 @@ if [ -f $HOME/.bash_completion ]; then
 fi
 
 source <(kubectl completion bash)
+source <(velero completion bash)
+source <(helm completion bash)
 
 python3 -m site &> /dev/null && export PATH=$PATH:$(python3 -m site --user-base)/bin
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
@@ -182,3 +184,5 @@ export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"

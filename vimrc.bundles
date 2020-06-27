@@ -15,6 +15,7 @@ Bundle 'guns/xterm-color-table.vim'
 Bundle 'sirtaj/vim-openscad'
 Bundle 'pangloss/vim-javascript'
 Bundle 'mxw/vim-jsx'
+Bundle 'google/vim-jsonnet'
 
 " Define bundles via Github repos
 " Bundle 'croaky/vim-colors-github'
